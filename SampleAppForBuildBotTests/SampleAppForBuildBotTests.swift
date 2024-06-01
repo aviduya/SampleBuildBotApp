@@ -28,6 +28,17 @@ final class SampleAppForBuildBotTests: XCTestCase {
         XCTAssert(outputGreeting == testableOutput)
     }
     
+    func testCoreChangeGreeting() throws {
+        let initialValue: String = "Hello World!"
+        let core = Core(greeting: initialValue)
+        XCTAssert(core.greeting == initialValue)
+        
+        let newValue = "Hello Again World! I Changed You"
+        core.changeGreeting(to: newValue)
+        XCTAssert(core.greeting == newValue)
+        
+    }
+    
     func testCoreSayGreeting() {
         
         let greeting: String = "Hello"

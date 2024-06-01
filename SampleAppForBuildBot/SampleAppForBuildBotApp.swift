@@ -18,7 +18,7 @@ class Core {
         return greeting
     }
     
-    func changeGreeting(for greeting: String) {
+    func changeGreeting(to greeting: String) {
         self.greeting = greeting
     }
 }

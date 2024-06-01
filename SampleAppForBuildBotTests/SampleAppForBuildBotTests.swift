@@ -8,6 +8,7 @@
 import XCTest
 @testable import SampleAppForBuildBot
 
+
 final class SampleAppForBuildBotTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -17,8 +18,29 @@ final class SampleAppForBuildBotTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testCoreInitializerSetter() throws {
+        let testableOutput: String = "Hello, this is a test."
+        
+        let core = Core(greeting: testableOutput)
+        let outputGreeting = core.greeting
+        
+        XCTAssert(outputGreeting == testableOutput)
+    }
+    
+    func testCoreSayGreeting() {
+        
+        let greeting: String = "Hello"
+        let core  = Core(greeting: greeting)
+        XCTAssert(core.sayHello() == greeting)
+        
+    }
 
     func testExample() throws {
+        
+        
+        
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -34,3 +56,11 @@ final class SampleAppForBuildBotTests: XCTestCase {
     }
 
 }
+
+
+/*
+ func testAddition() throws {
+        let result = 2 + 2
+        XCTAssertEqual(result, 4, "Addition test failed")
+    }
+ */

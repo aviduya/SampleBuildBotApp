@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D004F6C2C0E6FC000E0CF45 /* SampleAppForBuildBot.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleAppForBuildBot.xctestplan; sourceTree = "<group>"; };
 		9D3686F82C0BA05200751AAB /* SampleAppForBuildBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppForBuildBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3686FB2C0BA05200751AAB /* SampleAppForBuildBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForBuildBotApp.swift; sourceTree = "<group>"; };
 		9D3686FD2C0BA05200751AAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		9D3686EF2C0BA05200751AAB = {
 			isa = PBXGroup;
 			children = (
+				9D004F6C2C0E6FC000E0CF45 /* SampleAppForBuildBot.xctestplan */,
 				9D3686FA2C0BA05200751AAB /* SampleAppForBuildBot */,
 				9D36870B2C0BA05300751AAB /* SampleAppForBuildBotTests */,
 				9D3687152C0BA05300751AAB /* SampleAppForBuildBotUITests */,
